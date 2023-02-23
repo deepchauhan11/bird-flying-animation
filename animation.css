@@ -1,0 +1,141 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.sky, .road, .grass{
+    position: relative;
+}
+
+.sky{
+    background-color: #42cbf5;
+    height: 55%;
+}
+
+.cloud{
+    height: 40%;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    opacity: 80%;
+    animation-name: cloud;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes cloud{
+    from{transform: translateX(-0px);}
+    to{transform: translate(-1200px);}
+}
+.cloud2{
+    height: 40%;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    opacity: 30%;
+    animation-name: cloud;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes cloud{
+    from{transform: translateX(-0px);}
+    to{transform: translate(-1200px);}
+}
+
+.bird{
+    height: 30%;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    animation-name: bird;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bird{
+    from{transform: translateX(0px);}
+    to{transform: translate(1200px);}
+}
+.bird1{
+    height: 30%;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    animation-name: bird;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bird{
+    from{transform: translateX(0px);}
+    to{transform: translate(1200px);}
+}
+.box{
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-color: aquamarine;
+}
+
+.grass{
+    height: 15%;
+    width: 100%;
+    background-color: green;
+}
+
+
+.road{
+    height: 30%;
+    width: 100%;
+    background-color: dimgray;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    box-sizing: border-box;
+}
+
+.divider{
+    width: 100%;
+    border: 4px dashed white;
+    position: absolute;
+    top: 50%;
+    box-sizing: border-box;
+}
+
+.audi, .maruti{
+    height: 70%;
+    position: absolute;
+}
+
+.audi{
+    bottom: 50%;
+    animation-name: driveaudi;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.maruti{
+    top: 35%;
+    animation-name: drivemaruti;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes driveaudi{
+    from{transform: translateX(0px);}
+    to{transform: translate(1200px);}
+}
+
+@keyframes drivemaruti{
+    from{transform: translateX(0px);}
+    to{transform: translate(1200px);}
+}
